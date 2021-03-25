@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.11">
+	<Item id="b641d198-c692-443d-90d6-b781ed031f56">
+		<Name>Администратор</Name>
+		<Code>000000005</Code>
+		<Description>Администратор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ac1dc625-b1ca-497e-a351-46a4e5c8155a">
+		<Name>Бухгалтер</Name>
+		<Code>000000001</Code>
+		<Description>Бухгалтер</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b6b0ce21-0d4c-4e43-a04d-882851f3ae6a">
+		<Name>Директор</Name>
+		<Code>000000002</Code>
+		<Description>Директор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="37dd9e47-b54f-4fa2-9efd-9c74a3d417c3">
+		<Name>ПродавецКонсультант</Name>
+		<Code>000000004</Code>
+		<Description>Продавец консультант</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="faf4a17e-85c4-46d0-b3a3-eae4ef3777d1">
+		<Name>РаботникДоставки</Name>
+		<Code>000000003</Code>
+		<Description>Работник доставки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Список задач аптечным пунктам</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСоздать" id="89">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Item.СписокНужноВыполнить.StandardCommand.Create</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать задачу</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаСоздатьРасширеннаяПодсказка" id="90"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСписки" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа списки</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа списки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСпискиРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНужноВыполнить" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нужно выполнить</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+					<TitleFont ref="style:NormalTextFont" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа нужно выполнить</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНужноВыполнитьРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<Table name="СписокНужноВыполнить" id="3">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<DefaultItem>true</DefaultItem>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>НужноВыполнить</DataPath>
+							<RowPictureDataPath>НужноВыполнить.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<ContextMenu name="СписокНужноВыполнитьКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="СписокНужноВыполнитьКоманднаяПанель" id="5">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокНужноВыполнитьРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="СписокНужноВыполнитьСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>СписокНужноВыполнить</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНужноВыполнитьСтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="СписокНужноВыполнитьСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокНужноВыполнитьСостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>СписокНужноВыполнить</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНужноВыполнитьСостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="СписокНужноВыполнитьСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокНужноВыполнитьУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>СписокНужноВыполнить</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНужноВыполнитьУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокНужноВыполнитьУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Drag">СписокНужноВыполнитьПеретаскивание</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="Наименование" id="19">
+									<DataPath>НужноВыполнить.Description</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="21"/>
+								</LabelField>
+								<LabelField name="АптечныйПункт" id="31">
+									<DataPath>НужноВыполнить.АптечныйПункт</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="АптечныйПунктКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="АптечныйПунктРасширеннаяПодсказка" id="33"/>
+								</LabelField>
+								<LabelField name="СрокВыполнения" id="28">
+									<DataPath>НужноВыполнить.СрокВыполнения</DataPath>
+									<ContextMenu name="СрокВыполненияКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="СрокВыполненияРасширеннаяПодсказка" id="30"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВРаботе" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В работе</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>web:DarkOrange</TitleTextColor>
+					<TitleFont ref="style:NormalTextFont" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа в работе</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВРаботеРасширеннаяПодсказка" id="39"/>
+					<ChildItems>
+						<Table name="ВРаботе" id="55">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ВРаботе</DataPath>
+							<RowPictureDataPath>ВРаботе.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ВРаботеКонтекстноеМеню" id="56"/>
+							<AutoCommandBar name="ВРаботеКоманднаяПанель" id="57">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВРаботеРасширеннаяПодсказка" id="58"/>
+							<SearchStringAddition name="ВРаботеСтрокаПоиска" id="59">
+								<AdditionSource>
+									<Item>ВРаботе</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВРаботеСтрокаПоискаКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ВРаботеСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВРаботеСостояниеПросмотра" id="62">
+								<AdditionSource>
+									<Item>ВРаботе</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВРаботеСостояниеПросмотраКонтекстноеМеню" id="63"/>
+								<ExtendedTooltip name="ВРаботеСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВРаботеУправлениеПоиском" id="65">
+								<AdditionSource>
+									<Item>ВРаботе</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВРаботеУправлениеПоискомКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="ВРаботеУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Drag">ВРаботеПеретаскивание</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ВРаботеНаименование" id="68">
+									<DataPath>ВРаботе.Description</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="ВРаботеНаименованиеКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ВРаботеНаименованиеРасширеннаяПодсказка" id="70"/>
+								</LabelField>
+								<LabelField name="ВРаботеАптечныйПункт" id="74">
+									<DataPath>ВРаботе.АптечныйПункт</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="ВРаботеАптечныйПунктКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ВРаботеАптечныйПунктРасширеннаяПодсказка" id="76"/>
+								</LabelField>
+								<LabelField name="ВРаботеСрокВыполнения" id="80">
+									<DataPath>ВРаботе.СрокВыполнения</DataPath>
+									<ContextMenu name="ВРаботеСрокВыполненияКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ВРаботеСрокВыполненияРасширеннаяПодсказка" id="82"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаГотово" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Готово</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#2C9622</TitleTextColor>
+					<TitleFont ref="style:NormalTextFont" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа готово</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаГотовоРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<Table name="Готово" id="42">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Готово</DataPath>
+							<RowPictureDataPath>Готово.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ГотовоКонтекстноеМеню" id="43"/>
+							<AutoCommandBar name="ГотовоКоманднаяПанель" id="44">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ГотовоРасширеннаяПодсказка" id="45"/>
+							<SearchStringAddition name="ГотовоСтрокаПоиска" id="46">
+								<AdditionSource>
+									<Item>Готово</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГотовоСтрокаПоискаКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ГотовоСтрокаПоискаРасширеннаяПодсказка" id="48"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ГотовоСостояниеПросмотра" id="49">
+								<AdditionSource>
+									<Item>Готово</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГотовоСостояниеПросмотраКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ГотовоСостояниеПросмотраРасширеннаяПодсказка" id="51"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ГотовоУправлениеПоиском" id="52">
+								<AdditionSource>
+									<Item>Готово</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ГотовоУправлениеПоискомКонтекстноеМеню" id="53"/>
+								<ExtendedTooltip name="ГотовоУправлениеПоискомРасширеннаяПодсказка" id="54"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Drag">ГотовоПеретаскивание</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ГотовоНаименование" id="77">
+									<DataPath>Готово.Description</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="ГотовоНаименованиеКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ГотовоНаименованиеРасширеннаяПодсказка" id="79"/>
+								</LabelField>
+								<LabelField name="ГотовоАптечныйПункт" id="86">
+									<DataPath>Готово.АптечныйПункт</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="ГотовоАптечныйПунктКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ГотовоАптечныйПунктРасширеннаяПодсказка" id="88"/>
+								</LabelField>
+								<LabelField name="ГотовоСрокВыполнения" id="91">
+									<DataPath>Готово.СрокВыполнения</DataPath>
+									<ContextMenu name="ГотовоСрокВыполненияКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ГотовоСрокВыполненияРасширеннаяПодсказка" id="93"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НужноВыполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нужно выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Task.ЗадачиАптечнымПунктам</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗадач.НужноВыполнить</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВРаботе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В работе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Task.ЗадачиАптечнымПунктам</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗадач.ВРаботе</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Готово" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Task.ЗадачиАптечнымПунктам</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗадач.Готово</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

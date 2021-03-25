@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Дата" id="1">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Отделение" id="35">
+			<DataPath>Объект.АптечныйПункт</DataPath>
+			<ContextMenu name="ОтделениеКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ОтделениеРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="Продавец" id="38">
+			<DataPath>Объект.Продавец</DataPath>
+			<ContextMenu name="ПродавецКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ПродавецРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="Покупатель" id="4">
+			<DataPath>Объект.Покупатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПокупательКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПокупательРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="ChoiceProcessing">ПокупательОбработкаВыбора</Event>
+			</Events>
+		</InputField>
+		<Table name="Корзина" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Корзина</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КорзинаКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="КорзинаКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="КорзинаРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="КорзинаСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="КорзинаСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КорзинаСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="КорзинаСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КорзинаУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="КорзинаУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="КорзинаНомерСтроки" id="20">
+					<DataPath>Объект.Корзина.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КорзинаНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="КорзинаТовар" id="23">
+					<DataPath>Объект.Корзина.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаТоварКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="КорзинаТоварРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="OnChange">КорзинаТоварПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорзинаСтоимость" id="41">
+					<DataPath>1/0:a75a84c6-7ef2-4af4-b74c-0178a002ff23/0:74a9b89c-bd86-410f-963b-53df38897934</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаСтоимостьКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="КорзинаСтоимостьРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="КорзинаЦена" id="29">
+					<DataPath>Объект.Корзина.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаЦенаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КорзинаЦенаРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">КорзинаЦенаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорзинаКоличество" id="26">
+					<DataPath>Объект.Корзина.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаКоличествоКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КорзинаКоличествоРасширеннаяПодсказка" id="28"/>
+					<Events>
+						<Event name="OnChange">КорзинаКоличествоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорзинаСумма" id="32">
+					<DataPath>Объект.Корзина.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаСуммаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="КорзинаСуммаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.СписокПродаж</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.АптечныйПункт_Потрибитель.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>AccumulationRegister.РегистрПрибыли.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>
