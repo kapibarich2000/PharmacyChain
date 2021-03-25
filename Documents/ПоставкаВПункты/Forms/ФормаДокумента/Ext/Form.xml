@@ -46,7 +46,7 @@
 			<ExtendedTooltip name="АптечныйПунктРасширеннаяПодсказка" id="9"/>
 		</InputField>
 		<LabelField name="БизнесПроцессДокумента" id="48">
-			<DataPath>Объект.БизнесПроцессДокумента</DataPath>
+			<DataPath>Объект.имеетсяБизнесПроцесс</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 			<Border width="1">

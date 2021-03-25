@@ -281,16 +281,16 @@
 			</Attribute>
 			<Attribute uuid="f09b66a8-23a3-4574-93fe-b496e496866f">
 				<Properties>
-					<Name>БизнесПроцессДокумента</Name>
+					<Name>имеетсяБизнесПроцесс</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Бизнес процесс документа</v8:content>
+							<v8:content>Имеется бизнес процесс</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:BusinessProcessRef.ПоставкаТовараВАптечныйПункт</v8:Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -303,7 +303,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
+					<FillValue xsi:type="xs:boolean">false</FillValue>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>

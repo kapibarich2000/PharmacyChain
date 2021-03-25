@@ -20,6 +20,7 @@
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="19">
@@ -81,6 +82,46 @@
 					<ContextMenu name="АптечныйПунктКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="АптечныйПунктРасширеннаяПодсказка" id="25"/>
 				</InputField>
+				<UsualGroup name="КнопкиТаблицыТовары" id="73">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки таблицы товары</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки таблицы товары</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КнопкиТаблицыТоварыРасширеннаяПодсказка" id="74"/>
+					<ChildItems>
+						<Button name="Добавить" id="69">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Item.Товары.StandardCommand.Add</CommandName>
+							<BackColor>style:NavigationColor</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="70"/>
+						</Button>
+						<Button name="Изменить" id="77">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Item.Товары.StandardCommand.Change</CommandName>
+							<ExtendedTooltip name="ИзменитьРасширеннаяПодсказка" id="78"/>
+						</Button>
+						<Button name="Удалить" id="75">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Item.Товары.StandardCommand.Delete</CommandName>
+							<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="76"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 				<Table name="Товары" id="34">
 					<ReadOnly>true</ReadOnly>
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -234,4 +275,21 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СохранитьИзменения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить изменения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить изменения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьИзменения</Action>
+		</Command>
+	</Commands>
 </Form>
