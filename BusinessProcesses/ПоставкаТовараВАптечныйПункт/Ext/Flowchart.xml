@@ -36,7 +36,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="100" left="500" bottom="140" right="600"/>
+				<Location top="40" left="500" bottom="80" right="600"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -44,7 +44,7 @@
 				<PictureSize>AutoSize</PictureSize>
 			</Properties>
 			<Events>
-				<Event name="BeforeStart"/>
+				<Event name="BeforeStart">СтартПередСтартом</Event>
 			</Events>
 		</Start>
 		<ConnectionLine id="2">
@@ -65,10 +65,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="550" y="140"/>
-					<Point x="550" y="150"/>
-					<Point x="550" y="150"/>
-					<Point x="550" y="160"/>
+					<Point x="550" y="80"/>
+					<Point x="550" y="100"/>
+					<Point x="550" y="100"/>
+					<Point x="550" y="120"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -76,7 +76,7 @@
 						<PortIndex>4</PortIndex>
 					</From>
 					<To>
-						<Item>ПроверитьНаличиеТовара</Item>
+						<Item>ОдобритьПоставку</Item>
 						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
@@ -111,7 +111,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="1020" left="1020" bottom="1080" right="1140"/>
+				<Location top="1080" left="1020" bottom="1140" right="1140"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -144,7 +144,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="260" left="480" bottom="320" right="620"/>
+				<Location top="320" left="480" bottom="380" right="620"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -180,10 +180,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="480" y="290"/>
-					<Point x="450" y="290"/>
-					<Point x="450" y="290"/>
-					<Point x="420" y="290"/>
+					<Point x="480" y="350"/>
+					<Point x="450" y="350"/>
+					<Point x="450" y="350"/>
+					<Point x="420" y="350"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -227,11 +227,11 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="620" y="290"/>
-					<Point x="640" y="290"/>
-					<Point x="640" y="340"/>
-					<Point x="490" y="340"/>
-					<Point x="490" y="360"/>
+					<Point x="620" y="350"/>
+					<Point x="640" y="350"/>
+					<Point x="640" y="400"/>
+					<Point x="490" y="400"/>
+					<Point x="490" y="420"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -274,7 +274,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="260" left="260" bottom="320" right="420"/>
+				<Location top="320" left="260" bottom="380" right="420"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -310,10 +310,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="340" y="320"/>
-					<Point x="340" y="340"/>
-					<Point x="490" y="340"/>
-					<Point x="490" y="360"/>
+					<Point x="340" y="380"/>
+					<Point x="340" y="400"/>
+					<Point x="490" y="400"/>
+					<Point x="490" y="420"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -356,7 +356,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="440" left="420" bottom="500" right="560"/>
+				<Location top="500" left="420" bottom="560" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -402,10 +402,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="500"/>
-					<Point x="490" y="510"/>
-					<Point x="490" y="510"/>
-					<Point x="490" y="520"/>
+					<Point x="490" y="560"/>
+					<Point x="490" y="570"/>
+					<Point x="490" y="570"/>
+					<Point x="490" y="580"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -448,7 +448,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="520" left="420" bottom="580" right="560"/>
+				<Location top="580" left="420" bottom="640" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -494,10 +494,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="580"/>
-					<Point x="490" y="590"/>
-					<Point x="490" y="590"/>
-					<Point x="490" y="600"/>
+					<Point x="490" y="640"/>
+					<Point x="490" y="650"/>
+					<Point x="490" y="650"/>
+					<Point x="490" y="660"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -540,7 +540,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="600" left="420" bottom="660" right="560"/>
+				<Location top="660" left="420" bottom="720" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -586,10 +586,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="660"/>
-					<Point x="490" y="670"/>
-					<Point x="490" y="670"/>
-					<Point x="490" y="680"/>
+					<Point x="490" y="720"/>
+					<Point x="490" y="730"/>
+					<Point x="490" y="730"/>
+					<Point x="490" y="740"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -632,7 +632,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="360" left="420" bottom="420" right="560"/>
+				<Location top="420" left="420" bottom="480" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -678,10 +678,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="420"/>
-					<Point x="490" y="430"/>
-					<Point x="490" y="430"/>
-					<Point x="490" y="440"/>
+					<Point x="490" y="480"/>
+					<Point x="490" y="490"/>
+					<Point x="490" y="490"/>
+					<Point x="490" y="500"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -724,7 +724,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="160" left="480" bottom="220" right="620"/>
+				<Location top="220" left="480" bottom="280" right="620"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -770,10 +770,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="550" y="220"/>
-					<Point x="550" y="240"/>
-					<Point x="550" y="240"/>
-					<Point x="550" y="260"/>
+					<Point x="550" y="280"/>
+					<Point x="550" y="300"/>
+					<Point x="550" y="300"/>
+					<Point x="550" y="320"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -816,7 +816,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="760" left="420" bottom="900" right="560"/>
+				<Location top="820" left="420" bottom="960" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -875,10 +875,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="559" y="854"/>
-					<Point x="709" y="854"/>
-					<Point x="709" y="870"/>
-					<Point x="860" y="870"/>
+					<Point x="559" y="914"/>
+					<Point x="709" y="914"/>
+					<Point x="709" y="930"/>
+					<Point x="860" y="930"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -917,11 +917,11 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="420" y="872"/>
-					<Point x="400" y="872"/>
-					<Point x="400" y="920"/>
-					<Point x="660" y="920"/>
-					<Point x="660" y="940"/>
+					<Point x="420" y="932"/>
+					<Point x="400" y="932"/>
+					<Point x="400" y="980"/>
+					<Point x="660" y="980"/>
+					<Point x="660" y="1000"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -960,9 +960,9 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="559" y="890"/>
-					<Point x="660" y="890"/>
-					<Point x="660" y="940"/>
+					<Point x="559" y="950"/>
+					<Point x="660" y="950"/>
+					<Point x="660" y="1000"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -1005,7 +1005,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="680" left="420" bottom="740" right="560"/>
+				<Location top="740" left="420" bottom="800" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -1051,10 +1051,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="740"/>
-					<Point x="490" y="750"/>
-					<Point x="490" y="750"/>
-					<Point x="490" y="760"/>
+					<Point x="490" y="800"/>
+					<Point x="490" y="810"/>
+					<Point x="490" y="810"/>
+					<Point x="490" y="820"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -1097,7 +1097,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="840" left="860" bottom="900" right="1060"/>
+				<Location top="900" left="860" bottom="960" right="1060"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -1126,9 +1126,9 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="1060" y="870"/>
-					<Point x="1080" y="870"/>
-					<Point x="1080" y="1020"/>
+					<Point x="1060" y="930"/>
+					<Point x="1080" y="930"/>
+					<Point x="1080" y="1080"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -1171,7 +1171,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="940" left="580" bottom="1020" right="740"/>
+				<Location top="1000" left="580" bottom="1080" right="740"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -1217,10 +1217,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="660" y="1020"/>
-					<Point x="660" y="1040"/>
-					<Point x="960" y="1040"/>
-					<Point x="960" y="900"/>
+					<Point x="660" y="1080"/>
+					<Point x="660" y="1100"/>
+					<Point x="960" y="1100"/>
+					<Point x="960" y="960"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -1230,6 +1230,98 @@
 					<To>
 						<Item>ПроведениеЗаписиДокументаПоставки</Item>
 						<PortIndex>4</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Activity id="63" uuid="e7f60f6b-38e5-4886-9369-b04ee1c0b558">
+			<Properties>
+				<Name>ОдобритьПоставку</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Одобрить поставку</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>47</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>28</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="120" left="480" bottom="180" right="620"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<TaskDescription>Одобрить поставку</TaskDescription>
+				<Explanation/>
+				<Group>false</Group>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Должность">
+						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.Должности.Бухгалтер</Value>
+					</AddressingAttribute>
+				</AddressingAttributes>
+			</Properties>
+			<Events>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="BeforeCreateTasks"/>
+				<Event name="OnCreateTask"/>
+				<Event name="OnExecute">ОдобритьПоставкуПриВыполнении</Event>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="BeforeExecute"/>
+				<Event name="BeforeExecuteInteractively"/>
+			</Events>
+		</Activity>
+		<ConnectionLine id="64">
+			<Properties>
+				<Name>Линия16</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>48</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>29</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="550" y="180"/>
+					<Point x="550" y="200"/>
+					<Point x="550" y="200"/>
+					<Point x="550" y="220"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ОдобритьПоставку</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>ПроверитьНаличиеТовара</Item>
+						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
 				<Line width="1" gap="false">

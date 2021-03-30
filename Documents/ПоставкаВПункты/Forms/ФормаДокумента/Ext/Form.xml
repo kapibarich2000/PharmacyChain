@@ -88,7 +88,7 @@
 			<ContextMenu name="ДатаПоставкиКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="ДатаПоставкиРасширеннаяПодсказка" id="21"/>
 		</LabelField>
-		<LabelField name="ДоставкаВыполнена" id="16">
+		<LabelField name="СостояниеПоставки" id="16">
 			<DataPath>Объект.СостояниеПоставки</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
@@ -96,8 +96,11 @@
 			<Border width="1">
 				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
 			</Border>
-			<ContextMenu name="ДоставкаВыполненаКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ДоставкаВыполненаРасширеннаяПодсказка" id="18"/>
+			<ContextMenu name="СостояниеПоставкиКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СостояниеПоставкиРасширеннаяПодсказка" id="18"/>
+			<Events>
+				<Event name="OnChange">СостояниеПоставкиПриИзменении</Event>
+			</Events>
 		</LabelField>
 		<Table name="Товары" id="22">
 			<Representation>List</Representation>
