@@ -114,12 +114,6 @@
 							<CommandName>Form.Item.Товары.StandardCommand.Change</CommandName>
 							<ExtendedTooltip name="ИзменитьРасширеннаяПодсказка" id="78"/>
 						</Button>
-						<Button name="Удалить" id="75">
-							<Type>UsualButton</Type>
-							<Representation>PictureAndText</Representation>
-							<CommandName>Form.Item.Товары.StandardCommand.Delete</CommandName>
-							<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="76"/>
-						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<Table name="Товары" id="34">

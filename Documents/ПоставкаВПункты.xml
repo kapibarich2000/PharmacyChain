@@ -281,11 +281,11 @@
 			</Attribute>
 			<Attribute uuid="f09b66a8-23a3-4574-93fe-b496e496866f">
 				<Properties>
-					<Name>имеетсяБизнесПроцесс</Name>
+					<Name>СсылкаНаБизнесПроцесс</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имеется бизнес процесс</v8:content>
+							<v8:content>Ссылка на бизнес процесс</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

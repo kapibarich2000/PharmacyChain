@@ -36,8 +36,8 @@
 			<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.Attribute.ОсуществляетПоставку" id="dbf98049-2159-4869-b9cb-7a7635d1a82a"/>
 		</Metadata>
 		<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.Flowchart" id="2a203d10-7287-4660-a033-e4b56fdf2d0c.7" configVersion="b72a8b537295094b8cd602004a9392b600000000"/>
-		<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.Form.ФормаБизнесПроцесса" id="7b646558-14d4-4f59-b1d4-25df9487eaf5" configVersion="27b4df190756854f92aefe751c9ed71800000000"/>
-		<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.Form.ФормаБизнесПроцесса.Form" id="7b646558-14d4-4f59-b1d4-25df9487eaf5.0" configVersion="c4a61c147972dd4f9e9e91649c49ff6f00000000"/>
+		<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.Form.ФормаБизнесПроцесса" id="7b646558-14d4-4f59-b1d4-25df9487eaf5" configVersion="6a6691c108bd534aa6e6647d94beb8e800000000"/>
+		<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.Form.ФормаБизнесПроцесса.Form" id="7b646558-14d4-4f59-b1d4-25df9487eaf5.0" configVersion="f43c4413c165d0419f41796d10a7a27400000000"/>
 		<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.Form.ФормаСписка" id="fff27c3f-d6de-4444-bde2-3f619afb6f71" configVersion="81f3d30e5eb39c4eaba053cda23a019300000000"/>
 		<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.Form.ФормаСписка.Form" id="fff27c3f-d6de-4444-bde2-3f619afb6f71.0" configVersion="8b1094644959c64aa68b3c0c01d445fe00000000"/>
 		<Metadata name="BusinessProcess.ПоставкаТовараВАптечныйПункт.ObjectModule" id="2a203d10-7287-4660-a033-e4b56fdf2d0c.6" configVersion="523e3f49b3bc2f428fe1f23f6348b31000000000"/>
@@ -118,7 +118,7 @@
 		<Metadata name="Constant.ПочтовыйАдрес" id="cbe4156b-e665-4398-be4d-ce9bb0b65f24" configVersion="b4dc68b32dba764fbc1b7b2da0269f4600000000"/>
 		<Metadata name="Constant.РасчетныйСчет" id="ff4c03be-072c-4e17-9bef-e0faa8b4510c" configVersion="232bdfbfc3bee3428def304cb7e98c3700000000"/>
 		<Metadata name="Constant.ЮридическийАдресОрганизации" id="05c80aca-d00d-46b1-9830-eb3864ac3ed1" configVersion="c774f97129741a45a17c431d640dd04c00000000"/>
-		<Metadata name="Document.ПоставкаВПункты" id="1c29a722-3bce-4142-a51f-b21e91f6235d" configVersion="c90a71a04f5ffa438352e447c46e8a9500000000">
+		<Metadata name="Document.ПоставкаВПункты" id="1c29a722-3bce-4142-a51f-b21e91f6235d" configVersion="2488b63a77da1545b9aa3d91c6e0007100000000">
 			<Metadata name="Document.ПоставкаВПункты.Attribute.СоСклада" id="107eb5eb-1782-46a7-ab6e-5bd4f8085293"/>
 			<Metadata name="Document.ПоставкаВПункты.TabularSection.Товары" id="613be1ef-4849-4a5b-b905-aeb131638011"/>
 			<Metadata name="Document.ПоставкаВПункты.Command.Печать" id="6e03523e-6e8b-4d78-b9ee-7786ddfa1079"/>
@@ -127,7 +127,7 @@
 			<Metadata name="Document.ПоставкаВПункты.TabularSection.Товары.Attribute.Количество" id="a85ea187-140b-4dd3-91f3-b4eaab670e13"/>
 			<Metadata name="Document.ПоставкаВПункты.TabularSection.Товары.Attribute.Товар" id="c7914973-f42a-4cd0-b8bb-3432f230e570"/>
 			<Metadata name="Document.ПоставкаВПункты.Attribute.СостояниеПоставки" id="df299e0c-a664-482c-9f82-b9c4fda3371a"/>
-			<Metadata name="Document.ПоставкаВПункты.Attribute.имеетсяБизнесПроцесс" id="f09b66a8-23a3-4574-93fe-b496e496866f"/>
+			<Metadata name="Document.ПоставкаВПункты.Attribute.СсылкаНаБизнесПроцесс" id="f09b66a8-23a3-4574-93fe-b496e496866f"/>
 			<Metadata name="Document.ПоставкаВПункты.Attribute.ДатаПоставки" id="fb65474b-7e2d-4bb2-a6a5-5441995825a0"/>
 		</Metadata>
 		<Metadata name="Document.ПоставкаВПункты.Command.Печать.CommandModule" id="6e03523e-6e8b-4d78-b9ee-7786ddfa1079.2" configVersion="84e608ff87ee5b46808b33d90093d1eb00000000"/>
@@ -136,7 +136,7 @@
 		<Metadata name="Document.ПоставкаВПункты.Form.ФормаСписка" id="01040c20-69e3-4176-b7b8-ec66aa2ebe70" configVersion="42afc1ed7bb72141bf453e083c32c16100000000"/>
 		<Metadata name="Document.ПоставкаВПункты.Form.ФормаСписка.Form" id="01040c20-69e3-4176-b7b8-ec66aa2ebe70.0" configVersion="471477b3ad6dd040af866b016388766200000000"/>
 		<Metadata name="Document.ПоставкаВПункты.ManagerModule" id="1c29a722-3bce-4142-a51f-b21e91f6235d.2" configVersion="ac3b372f163c4a4a82e649d70bf89b5500000000"/>
-		<Metadata name="Document.ПоставкаВПункты.ObjectModule" id="1c29a722-3bce-4142-a51f-b21e91f6235d.0" configVersion="4e39115c76f4e74384bf0232c12dcbcb00000000"/>
+		<Metadata name="Document.ПоставкаВПункты.ObjectModule" id="1c29a722-3bce-4142-a51f-b21e91f6235d.0" configVersion="d18cd7f923d659478528b350a53f5b7f00000000"/>
 		<Metadata name="Document.ПоставкаВПункты.Template.Печать" id="dc3f162c-47df-4633-afca-aa647b7478f3" configVersion="22a84c77e3863a4d9a94c5db25029fbc00000000"/>
 		<Metadata name="Document.ПоставкаВПункты.Template.Печать.Template" id="dc3f162c-47df-4633-afca-aa647b7478f3.0" configVersion="dcd22dc1b03909478f1e5ba4b235bedb00000000"/>
 		<Metadata name="Document.ПоступленияНаСклад" id="5601e9f3-e29a-4cc9-818b-20a91551e6f4" configVersion="42ef2c650b1d5540a5842ac90d82d8ff00000000">
