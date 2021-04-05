@@ -45,16 +45,13 @@
 			<ContextMenu name="АптечныйПунктКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="АптечныйПунктРасширеннаяПодсказка" id="9"/>
 		</InputField>
-		<LabelField name="БизнесПроцессДокумента" id="48">
+		<InputField name="БизнесПроцессДокумента" id="48">
 			<DataPath>Объект.СсылкаНаБизнесПроцесс</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-			<Border width="1">
-				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
-			</Border>
 			<ContextMenu name="БизнесПроцессДокументаКонтекстноеМеню" id="49"/>
 			<ExtendedTooltip name="БизнесПроцессДокументаРасширеннаяПодсказка" id="50"/>
-		</LabelField>
+		</InputField>
 		<LabelField name="ОсуществляетДоставку" id="10">
 			<DataPath>Объект.ОсуществляетПоставку</DataPath>
 			<ReadOnly>true</ReadOnly>
@@ -98,9 +95,6 @@
 			</Border>
 			<ContextMenu name="СостояниеПоставкиКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="СостояниеПоставкиРасширеннаяПодсказка" id="18"/>
-			<Events>
-				<Event name="OnChange">СостояниеПоставкиПриИзменении</Event>
-			</Events>
 		</LabelField>
 		<Table name="Товары" id="22">
 			<Representation>List</Representation>

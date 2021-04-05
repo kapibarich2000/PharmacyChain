@@ -40,8 +40,8 @@
 			<Autonumbering>true</Autonumbering>
 			<TaskNumberAutoPrefix>DontUse</TaskNumberAutoPrefix>
 			<DescriptionLength>25</DescriptionLength>
-			<Addressing/>
-			<MainAddressingAttribute/>
+			<Addressing>InformationRegister.РегистрАдресации</Addressing>
+			<MainAddressingAttribute>Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Должность</MainAddressingAttribute>
 			<CurrentPerformer>SessionParameter.ТекущийПользователь</CurrentPerformer>
 			<BasedOn/>
 			<Characteristics/>
@@ -77,8 +77,8 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаЗадачи</Form>
-			<Form>ФормаМоиЗадачи</Form>
 			<Form>ФормаСписка</Form>
+			<Form>МоиЗадачи</Form>
 			<AddressingAttribute uuid="3cfc8193-3e72-4327-af29-f6248c58a4e2">
 				<Properties>
 					<Name>Исполнитель</Name>
@@ -159,7 +159,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</AddressingAttribute>
-			<Command uuid="22056cc0-a4a2-4ca6-a807-6f20f9c1a5d3">
+			<Command uuid="297e09c8-07ed-4244-a580-9c3a08e228ec">
 				<Properties>
 					<Name>ОткрытьФормуМоиЗадачи</Name>
 					<Synonym>

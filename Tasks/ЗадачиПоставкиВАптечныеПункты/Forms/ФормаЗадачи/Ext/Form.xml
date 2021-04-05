@@ -54,6 +54,15 @@
 					<ContextMenu name="БизнесПроцессНаличиеТовараНаСкладеКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="БизнесПроцессНаличиеТовараНаСкладеРасширеннаяПодсказка" id="25"/>
 				</LabelField>
+				<LabelField name="БизнесПроцессСклад" id="54">
+					<DataPath>Объект.BusinessProcess.Склад</DataPath>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+					</Border>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="БизнесПроцессСкладКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="БизнесПроцессСкладРасширеннаяПодсказка" id="56"/>
+				</LabelField>
 				<LabelField name="БизнесПроцессСостояниеПоставки" id="26">
 					<DataPath>Объект.BusinessProcess.СостояниеПоставки</DataPath>
 					<Border width="1">

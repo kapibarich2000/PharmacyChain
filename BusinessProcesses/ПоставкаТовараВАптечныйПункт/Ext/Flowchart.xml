@@ -286,8 +286,8 @@
 			<Events>
 				<Event name="BeforeCreateTasks"/>
 				<Event name="OnCreateTask"/>
-				<Event name="OnCreateSubBusinessProcesses"/>
-				<Event name="OnExecute"/>
+				<Event name="OnCreateSubBusinessProcesses">ПоставкаТовараНаСкладПриСозданииВложенныхБизнесПроцессов</Event>
+				<Event name="OnExecute">ПоставкаТовараНаСкладПриВыполнении</Event>
 				<Event name="BeforeExecute"/>
 				<Event name="BeforeCreateSubBusinessProcesses"/>
 			</Events>
@@ -562,7 +562,7 @@
 				<Event name="InteractiveActivationProcessing"/>
 				<Event name="BeforeCreateTasks"/>
 				<Event name="OnCreateTask"/>
-				<Event name="OnExecute"/>
+				<Event name="OnExecute">ДоставитьТоварПриВыполнении</Event>
 				<Event name="CheckExecutionProcessing"/>
 				<Event name="BeforeExecute"/>
 				<Event name="BeforeExecuteInteractively"/>

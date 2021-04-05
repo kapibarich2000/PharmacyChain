@@ -20,6 +20,7 @@
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 	</Events>
 	<ChildItems>
@@ -61,21 +62,29 @@
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаСведенийОДоставке" id="32">
+		<InputField name="СсылкаДокументаПоставки" id="81">
+			<DataPath>Объект.СсылкаДокументаПоставки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleFont ref="style:NormalTextFont" bold="false" italic="true" underline="true" strikeout="false" kind="StyleItem"/>
+			<Font ref="style:NormalTextFont" kind="StyleItem"/>
+			<ContextMenu name="СсылкаДокументаПоставкиКонтекстноеМеню" id="82"/>
+			<ExtendedTooltip name="СсылкаДокументаПоставкиРасширеннаяПодсказка" id="83"/>
+		</InputField>
+		<UsualGroup name="ГруппаСведенийОПоставке" id="32">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сведений о доставке</v8:content>
+					<v8:content>Сведений о поставке</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа сведений о доставке</v8:content>
+					<v8:content>Группа сведений о поставке</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
-			<ExtendedTooltip name="ГруппаСведенийОДоставкеРасширеннаяПодсказка" id="33"/>
+			<ExtendedTooltip name="ГруппаСведенийОПоставкеРасширеннаяПодсказка" id="33"/>
 			<ChildItems>
 				<InputField name="АптечныйПункт" id="23">
 					<DataPath>Объект.АптечныйПункт</DataPath>
@@ -83,7 +92,6 @@
 					<ExtendedTooltip name="АптечныйПунктРасширеннаяПодсказка" id="25"/>
 				</InputField>
 				<UsualGroup name="КнопкиТаблицыТовары" id="73">
-					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -183,62 +191,83 @@
 						</InputField>
 					</ChildItems>
 				</Table>
-				<RadioButtonField name="НаличиеТовараНаСкладе" id="26">
-					<DataPath>Объект.НаличиеТовараНаСкладе</DataPath>
-					<TitleLocation>Left</TitleLocation>
-					<RadioButtonType>Auto</RadioButtonType>
-					<ChoiceList>
-						<xr:Item>
-							<xr:Presentation/>
-							<xr:CheckState>0</xr:CheckState>
-							<xr:Value xsi:type="FormChoiceListDesTimeValue">
-								<Presentation/>
-								<Value xsi:type="xr:DesignTimeRef">Enum.НаличиеТовараНаСкладе.EnumValue.Имеентся</Value>
-							</xr:Value>
-						</xr:Item>
-						<xr:Item>
-							<xr:Presentation/>
-							<xr:CheckState>0</xr:CheckState>
-							<xr:Value xsi:type="FormChoiceListDesTimeValue">
-								<Presentation>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Нет</v8:content>
-									</v8:item>
-								</Presentation>
-								<Value xsi:type="xr:DesignTimeRef">Enum.НаличиеТовараНаСкладе.EnumValue.НеИмеется</Value>
-							</xr:Value>
-						</xr:Item>
-					</ChoiceList>
-					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-					<ContextMenu name="НаличиеТовараНаСкладеКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="НаличиеТовараНаСкладеРасширеннаяПодсказка" id="28"/>
-				</RadioButtonField>
-				<InputField name="Склад" id="56">
-					<DataPath>Объект.Склад</DataPath>
-					<ContextMenu name="СкладКонтекстноеМеню" id="57"/>
-					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="58"/>
-				</InputField>
-				<InputField name="ОсуществляетДоставку" id="59">
-					<DataPath>Объект.ОсуществляетПоставку</DataPath>
-					<ContextMenu name="ОсуществляетДоставкуКонтекстноеМеню" id="60"/>
-					<ExtendedTooltip name="ОсуществляетДоставкуРасширеннаяПодсказка" id="61"/>
-				</InputField>
-				<CheckBoxField name="ДоставкаОсуществилась" id="62">
-					<DataPath>1/0:f941835c-eb92-464e-9c62-16571b1896b2</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ДоставкаОсуществиласьКонтекстноеМеню" id="63"/>
-					<ExtendedTooltip name="ДоставкаОсуществиласьРасширеннаяПодсказка" id="64"/>
-				</CheckBoxField>
-				<InputField name="СостояниеПоставки" id="29">
-					<DataPath>Объект.СостояниеПоставки</DataPath>
-					<ContextMenu name="СостояниеПоставкиКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="СостояниеПоставкиРасширеннаяПодсказка" id="31"/>
-					<Events>
-						<Event name="OnChange">СостояниеПоставкиПриИзменении</Event>
-					</Events>
-				</InputField>
+				<UsualGroup name="ПоляПодТаблицей" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля под таблицей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля под таблицей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПоляПодТаблицейРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="Склад" id="56">
+							<DataPath>Объект.Склад</DataPath>
+							<ContextMenu name="СкладКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="58"/>
+						</InputField>
+						<RadioButtonField name="НаличиеТовараНаСкладе" id="26">
+							<DataPath>Объект.НаличиеТовараНаСкладе</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.НаличиеТовараНаСкладе.EnumValue.Имеентся</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Нет</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.НаличиеТовараНаСкладе.EnumValue.НеИмеется</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="НаличиеТовараНаСкладеКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="НаличиеТовараНаСкладеРасширеннаяПодсказка" id="28"/>
+						</RadioButtonField>
+						<InputField name="ОсуществляетДоставку" id="59">
+							<DataPath>Объект.ОсуществляетПоставку</DataPath>
+							<ContextMenu name="ОсуществляетДоставкуКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ОсуществляетДоставкуРасширеннаяПодсказка" id="61"/>
+						</InputField>
+						<CheckBoxField name="ДоставкаОсуществилась" id="62">
+							<DataPath>1/0:f941835c-eb92-464e-9c62-16571b1896b2</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДоставкаОсуществиласьКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ДоставкаОсуществиласьРасширеннаяПодсказка" id="64"/>
+						</CheckBoxField>
+						<InputField name="СостояниеПоставки" id="29">
+							<DataPath>Объект.СостояниеПоставки</DataPath>
+							<ContextMenu name="СостояниеПоставкиКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="СостояниеПоставкиРасширеннаяПодсказка" id="31"/>
+							<Events>
+								<Event name="OnChange">СостояниеПоставкиПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<GraphicalSchemaField name="КартаМаршрута" id="16">

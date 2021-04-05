@@ -32,10 +32,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Delete</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -45,6 +41,29 @@
 		</right>
 		<right>
 			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ТекущийПользователь</name>
+		<right>
+			<name>Get</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -57,6 +76,48 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ПоставкаТовараВАптечныйПункт</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрАдресации.Dimension.Пользователь</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -79,6 +140,57 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрАдресации</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрАдресации.StandardAttribute.Active</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрАдресации.StandardAttribute.LineNumber</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрАдресации.StandardAttribute.Recorder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрАдресации.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -179,6 +291,10 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Update</name>
 			<value>true</value>
 		</right>
@@ -187,7 +303,19 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -206,40 +334,47 @@
 			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>Task.ЗадачиПоставкиВАптечныеПункты</name>
 		<right>
-			<name>ReadDataHistory</name>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>ReadDataHistoryOfMissingData</name>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>UpdateDataHistory</name>
+			<name>View</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>UpdateDataHistoryOfMissingData</name>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>UpdateDataHistorySettings</name>
+			<name>InteractiveSetDeletionMark</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>UpdateDataHistoryVersionComment</name>
+			<name>InteractiveClearDeletionMark</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>ViewDataHistory</name>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>EditDataHistoryVersionComment</name>
+			<name>InteractiveActivate</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>SwitchToDataHistoryVersion</name>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -252,6 +387,17 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрАдресации.Dimension.Должность</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -317,6 +463,14 @@
 		</right>
 		<right>
 			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
 			<value>true</value>
 		</right>
 		<right>

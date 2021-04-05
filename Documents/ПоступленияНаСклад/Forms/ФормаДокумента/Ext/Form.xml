@@ -3,19 +3,79 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписать" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ImportantColor</BackColor>
+				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="41"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="42">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="43"/>
+			</Button>
+			<Button name="ФормаСправка" id="48">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="49"/>
+			</Button>
+			<Button name="ФормаПеречитать" id="44">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Reread</CommandName>
+				<ExtendedTooltip name="ФормаПеречитатьРасширеннаяПодсказка" id="45"/>
+			</Button>
+			<Button name="ФормаИсторияИзменений" id="46">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.ChangeHistory</CommandName>
+				<ExtendedTooltip name="ФормаИсторияИзмененийРасширеннаяПодсказка" id="47"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
-		<InputField name="Дата" id="1">
-			<DataPath>Объект.Date</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ДатаКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="3"/>
-		</InputField>
+		<UsualGroup name="Группа1" id="35">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="Дата" id="1">
+					<DataPath>Объект.Date</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания заявки</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" bold="false" italic="false" underline="true" strikeout="false" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ДатаДоставки" id="37">
+					<DataPath>Объект.ДатаПоставки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" bold="false" italic="false" underline="true" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ДатаДоставкиКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДатаДоставкиРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Склад" id="4">
 			<DataPath>Объект.Склад</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="СкладКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СсылкаНаБизнесПроцесс" id="50">
+			<DataPath>Объект.СсылкаНаБизнесПроцесс</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="СсылкаНаБизнесПроцессКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="СсылкаНаБизнесПроцессРасширеннаяПодсказка" id="52"/>
 		</InputField>
 		<Table name="Товары" id="7">
 			<Representation>List</Representation>
