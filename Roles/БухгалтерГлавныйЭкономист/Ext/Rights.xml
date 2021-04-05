@@ -45,6 +45,42 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Subsystem.СведенияОбОрганизации</name>
@@ -237,6 +273,13 @@
 		</right>
 	</object>
 	<object>
+		<name>SessionParameter.ТекущийПользователь</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.ОстаткиТовараВАптечномПункте</name>
 		<right>
 			<name>Use</name>
@@ -297,10 +340,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>Update</name>
 			<value>true</value>
 		</right>
@@ -334,6 +373,42 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -516,55 +591,7 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>TotalsControl</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>ReadDataHistory</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>ReadDataHistoryOfMissingData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>UpdateDataHistory</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>UpdateDataHistoryOfMissingData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>UpdateDataHistorySettings</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>UpdateDataHistoryVersionComment</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>ViewDataHistory</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>EditDataHistoryVersionComment</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>

@@ -20,11 +20,6 @@
 				<CommandName>Form.StandardCommand.Delete</CommandName>
 				<ExtendedTooltip name="ФормаУдалитьРасширеннаяПодсказка" id="37"/>
 			</Button>
-			<Button name="ФормаЗакрыть" id="46">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.Close</CommandName>
-				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="47"/>
-			</Button>
 			<Button name="ФормаУстановитьПометкуУдаления" id="38">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>

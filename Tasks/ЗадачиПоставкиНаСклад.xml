@@ -41,7 +41,7 @@
 			<TaskNumberAutoPrefix>DontUse</TaskNumberAutoPrefix>
 			<DescriptionLength>25</DescriptionLength>
 			<Addressing>InformationRegister.РегистрАдресации</Addressing>
-			<MainAddressingAttribute>Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Должность</MainAddressingAttribute>
+			<MainAddressingAttribute>Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель</MainAddressingAttribute>
 			<CurrentPerformer>SessionParameter.ТекущийПользователь</CurrentPerformer>
 			<BasedOn/>
 			<Characteristics/>
@@ -79,46 +79,6 @@
 			<Form>ФормаЗадачи</Form>
 			<Form>ФормаСписка</Form>
 			<Form>МоиЗадачи</Form>
-			<AddressingAttribute uuid="b8374c7a-e34f-40ed-9aaa-3d8820637347">
-				<Properties>
-					<Name>Исполнитель</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Исполнитель</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<AddressingDimension/>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</AddressingAttribute>
 			<AddressingAttribute uuid="b0ebf302-de11-4046-b77a-745f1a51da02">
 				<Properties>
 					<Name>Должность</Name>
@@ -154,7 +114,47 @@
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Indexing>DontIndex</Indexing>
-					<AddressingDimension/>
+					<AddressingDimension>InformationRegister.РегистрАдресации.Dimension.Должность</AddressingDimension>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</AddressingAttribute>
+			<AddressingAttribute uuid="b8374c7a-e34f-40ed-9aaa-3d8820637347">
+				<Properties>
+					<Name>Исполнитель</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<AddressingDimension>InformationRegister.РегистрАдресации.Dimension.Пользователь</AddressingDimension>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>

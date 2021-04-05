@@ -117,6 +117,16 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="Исполнитель" id="48">
+					<DataPath>Список.Исполнитель</DataPath>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="50"/>
+				</LabelField>
+				<LabelField name="Должность" id="51">
+					<DataPath>Список.Должность</DataPath>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="53"/>
+				</LabelField>
 				<LabelField name="Дата" id="22">
 					<DataPath>Список.Date</DataPath>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="23"/>

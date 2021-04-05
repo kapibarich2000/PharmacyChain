@@ -1,38 +1,161 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
-	<AutoCommandBar name="" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
-		<InputField name="Номер" id="1">
-			<DataPath>Объект.Number</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
-		</InputField>
+		<UsualGroup name="Группа1" id="22">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="Дата" id="7">
+					<DataPath>Объект.Date</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Наименование" id="4">
 			<DataPath>Объект.Description</DataPath>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 			<EditMode>EnterOnInput</EditMode>
+			<BackColor>#FAFF2A</BackColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 		</InputField>
-		<InputField name="Дата" id="7">
-			<DataPath>Объект.Date</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ДатаКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="9"/>
-		</InputField>
+		<Table name="БизнесПроцессТовары" id="24">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.BusinessProcess.Товары</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="БизнесПроцессТоварыКонтекстноеМеню" id="25"/>
+			<AutoCommandBar name="БизнесПроцессТоварыКоманднаяПанель" id="26"/>
+			<ExtendedTooltip name="БизнесПроцессТоварыРасширеннаяПодсказка" id="27"/>
+			<SearchStringAddition name="БизнесПроцессТоварыСтрокаПоиска" id="28">
+				<AdditionSource>
+					<Item>БизнесПроцессТовары</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БизнесПроцессТоварыСтрокаПоискаКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="БизнесПроцессТоварыСтрокаПоискаРасширеннаяПодсказка" id="30"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="БизнесПроцессТоварыСостояниеПросмотра" id="31">
+				<AdditionSource>
+					<Item>БизнесПроцессТовары</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БизнесПроцессТоварыСостояниеПросмотраКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="БизнесПроцессТоварыСостояниеПросмотраРасширеннаяПодсказка" id="33"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="БизнесПроцессТоварыУправлениеПоиском" id="34">
+				<AdditionSource>
+					<Item>БизнесПроцессТовары</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="БизнесПроцессТоварыУправлениеПоискомКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="БизнесПроцессТоварыУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+			</SearchControlAddition>
+		</Table>
 		<InputField name="БизнесПроцесс" id="10">
 			<DataPath>Объект.BusinessProcess</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="БизнесПроцессКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="БизнесПроцессРасширеннаяПодсказка" id="12"/>
 		</InputField>
-		<InputField name="ТочкаМаршрута" id="13">
-			<DataPath>Объект.RoutePoint</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ТочкаМаршрутаКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ТочкаМаршрутаРасширеннаяПодсказка" id="15"/>
-		</InputField>
+		<UsualGroup name="ГруппаСведенияОДоставке" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о доставке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сведения о доставке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаСведенияОДоставкеРасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<Table name="БизнесПроцессТовары1" id="37">
+					<HeightControlVariant>UseContentHeight</HeightControlVariant>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.BusinessProcess.Товары</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="БизнесПроцессТовары1КонтекстноеМеню" id="38"/>
+					<AutoCommandBar name="БизнесПроцессТовары1КоманднаяПанель" id="39">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="БизнесПроцессТовары1РасширеннаяПодсказка" id="40"/>
+					<SearchStringAddition name="БизнесПроцессТовары1СтрокаПоиска" id="41">
+						<AdditionSource>
+							<Item>БизнесПроцессТовары1</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="БизнесПроцессТовары1СтрокаПоискаКонтекстноеМеню" id="42"/>
+						<ExtendedTooltip name="БизнесПроцессТовары1СтрокаПоискаРасширеннаяПодсказка" id="43"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="БизнесПроцессТовары1СостояниеПросмотра" id="44">
+						<AdditionSource>
+							<Item>БизнесПроцессТовары1</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="БизнесПроцессТовары1СостояниеПросмотраКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="БизнесПроцессТовары1СостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="БизнесПроцессТовары1УправлениеПоиском" id="47">
+						<AdditionSource>
+							<Item>БизнесПроцессТовары1</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="БизнесПроцессТовары1УправлениеПоискомКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="БизнесПроцессТовары1УправлениеПоискомРасширеннаяПодсказка" id="49"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="БизнесПроцессТовары1НомерСтроки" id="50">
+							<DataPath>Объект.BusinessProcess.Товары.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БизнесПроцессТовары1НомерСтрокиКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="БизнесПроцессТовары1НомерСтрокиРасширеннаяПодсказка" id="52"/>
+						</LabelField>
+						<LabelField name="БизнесПроцессТовары1Наименование" id="53">
+							<DataPath>Объект.BusinessProcess.Товары.Наименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БизнесПроцессТовары1НаименованиеКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="БизнесПроцессТовары1НаименованиеРасширеннаяПодсказка" id="55"/>
+						</LabelField>
+						<LabelField name="БизнесПроцессТовары1Количество" id="56">
+							<DataPath>Объект.BusinessProcess.Товары.Количество</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БизнесПроцессТовары1КоличествоКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="БизнесПроцессТовары1КоличествоРасширеннаяПодсказка" id="58"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<InputField name="БизнесПроцессСклад" id="61">
+					<DataPath>Объект.BusinessProcess.Склад</DataPath>
+					<ContextMenu name="БизнесПроцессСкладКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="БизнесПроцессСкладРасширеннаяПодсказка" id="63"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Исполнитель" id="16">
 			<DataPath>Объект.Исполнитель</DataPath>
 			<EditMode>EnterOnInput</EditMode>

@@ -16,11 +16,11 @@
 	<Items>
 		<Start id="1" uuid="77de8090-4894-4659-b8d6-2219473be378">
 			<Properties>
-				<Name>СтартИзБППоставкиВАптечныйПункт</Name>
+				<Name>Старт</Name>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Старт из БП Поставки в аптечный пункт</v8:content>
+						<v8:content>Старт</v8:content>
 					</v8:item>
 				</Title>
 				<ToolTip/>
@@ -72,7 +72,7 @@
 				</PivotPoints>
 				<Connect>
 					<From>
-						<Item>СтартИзБППоставкиВАптечныйПункт</Item>
+						<Item>Старт</Item>
 						<PortIndex>4</PortIndex>
 					</From>
 					<To>
@@ -121,11 +121,11 @@
 				<Explanation/>
 				<Group>false</Group>
 				<AddressingAttributes>
-					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель">
-						<Value xsi:nil="true"/>
-					</AddressingAttribute>
 					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Должность">
 						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.Должности.Бухгалтер</Value>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 				</AddressingAttributes>
 			</Properties>
@@ -213,11 +213,11 @@
 				<Explanation/>
 				<Group>false</Group>
 				<AddressingAttributes>
-					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель">
-						<Value xsi:nil="true"/>
-					</AddressingAttribute>
 					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Должность">
 						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.Должности.РаботникДоставки</Value>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 				</AddressingAttributes>
 			</Properties>
@@ -275,7 +275,7 @@
 		</ConnectionLine>
 		<Completion id="10" uuid="c218dba1-ef6a-4856-b170-f2f051d9bde7">
 			<Properties>
-				<Name>Завершение1</Name>
+				<Name>Завершение</Name>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -338,11 +338,11 @@
 				<Explanation/>
 				<Group>false</Group>
 				<AddressingAttributes>
-					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель">
-						<Value xsi:nil="true"/>
-					</AddressingAttribute>
 					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Должность">
 						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.Должности.Бухгалтер</Value>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 				</AddressingAttributes>
 			</Properties>
@@ -574,11 +574,11 @@
 				<Explanation/>
 				<Group>false</Group>
 				<AddressingAttributes>
-					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель">
-						<Value xsi:nil="true"/>
-					</AddressingAttribute>
 					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Должность">
 						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.Должности.Бухгалтер</Value>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачиПоставкиНаСклад.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 				</AddressingAttributes>
 			</Properties>
@@ -738,82 +738,8 @@
 						<PortIndex>4</PortIndex>
 					</From>
 					<To>
-						<Item>Завершение1</Item>
+						<Item>Завершение</Item>
 						<PortIndex>2</PortIndex>
-					</To>
-				</Connect>
-				<Line width="1" gap="false">
-					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
-				</Line>
-				<DecorativeLine>false</DecorativeLine>
-				<TextLocation>FirstSegment</TextLocation>
-				<BeginArrow>None</BeginArrow>
-				<EndArrow>Filled</EndArrow>
-			</Properties>
-		</ConnectionLine>
-		<Start id="24" uuid="4ae86ac2-24b3-412f-90d5-6591757d8ebc">
-			<Properties>
-				<Name>СтартИзДокументаПоставки</Name>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Старт из документа поставки</v8:content>
-					</v8:item>
-				</Title>
-				<ToolTip/>
-				<TabOrder>22</TabOrder>
-				<BackColor>auto</BackColor>
-				<TextColor>style:FormTextColor</TextColor>
-				<LineColor>style:BorderColor</LineColor>
-				<GroupNumber>0</GroupNumber>
-				<ZOrder>18</ZOrder>
-				<Hyperlink>false</Hyperlink>
-				<Transparent>false</Transparent>
-				<Font kind="AutoFont"/>
-				<HorizontalAlign>Center</HorizontalAlign>
-				<VerticalAlign>Center</VerticalAlign>
-				<PictureLocation>Left</PictureLocation>
-				<Location top="20" left="100" bottom="80" right="220"/>
-				<Border width="1" gap="false">
-					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
-				</Border>
-				<Picture/>
-				<PictureSize>AutoSize</PictureSize>
-			</Properties>
-			<Events>
-				<Event name="BeforeStart"/>
-			</Events>
-		</Start>
-		<ConnectionLine id="25">
-			<Properties>
-				<Name>Линия10</Name>
-				<Title/>
-				<ToolTip/>
-				<TabOrder>23</TabOrder>
-				<BackColor>auto</BackColor>
-				<TextColor>style:FormTextColor</TextColor>
-				<LineColor>style:BorderColor</LineColor>
-				<GroupNumber>0</GroupNumber>
-				<ZOrder>19</ZOrder>
-				<Hyperlink>false</Hyperlink>
-				<Transparent>false</Transparent>
-				<Font kind="AutoFont"/>
-				<HorizontalAlign>Center</HorizontalAlign>
-				<VerticalAlign>Center</VerticalAlign>
-				<PictureLocation>Left</PictureLocation>
-				<PivotPoints>
-					<Point x="160" y="80"/>
-					<Point x="160" y="450"/>
-					<Point x="360" y="450"/>
-				</PivotPoints>
-				<Connect>
-					<From>
-						<Item>СтартИзДокументаПоставки</Item>
-						<PortIndex>4</PortIndex>
-					</From>
-					<To>
-						<Item>ПередатьИнформациюПоставщику</Item>
-						<PortIndex>1</PortIndex>
 					</To>
 				</Connect>
 				<Line width="1" gap="false">

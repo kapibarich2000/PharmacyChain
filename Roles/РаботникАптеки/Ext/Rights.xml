@@ -52,11 +52,11 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveChangeOfPosted</name>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InputByString</name>
+			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -85,11 +85,19 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -106,6 +114,46 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Start</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveStart</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -342,11 +390,19 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
 			<value>true</value>
 		</right>
 		<right>

@@ -114,6 +114,13 @@
 		</right>
 	</object>
 	<object>
+		<name>SessionParameter.ТекущийПользователь</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.ОстаткиТовараВАптечномПункте</name>
 		<right>
 			<name>Use</name>
@@ -151,7 +158,15 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -159,10 +174,6 @@
 		<name>BusinessProcess.ПоставкаТовараВАптечныйПункт</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -209,6 +220,13 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РегистрАдресации</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -336,10 +354,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Delete</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>Posting</name>
 			<value>true</value>
 		</right>
@@ -360,19 +374,19 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractivePosting</name>
+			<name>InteractiveSetDeletionMark</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractivePostingRegular</name>
+			<name>InteractiveClearDeletionMark</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveUndoPosting</name>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveChangeOfPosted</name>
+			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -499,7 +513,15 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveActivate</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>

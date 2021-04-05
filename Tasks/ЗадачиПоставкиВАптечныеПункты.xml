@@ -41,7 +41,7 @@
 			<TaskNumberAutoPrefix>DontUse</TaskNumberAutoPrefix>
 			<DescriptionLength>25</DescriptionLength>
 			<Addressing>InformationRegister.РегистрАдресации</Addressing>
-			<MainAddressingAttribute>Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Должность</MainAddressingAttribute>
+			<MainAddressingAttribute>Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Исполнитель</MainAddressingAttribute>
 			<CurrentPerformer>SessionParameter.ТекущийПользователь</CurrentPerformer>
 			<BasedOn/>
 			<Characteristics/>
