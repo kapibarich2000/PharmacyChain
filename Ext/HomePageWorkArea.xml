@@ -1,41 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+<HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<WorkingAreaTemplate>OneColumn</WorkingAreaTemplate>
 	<Column>
 		<Item>
-			<Form>Task.ЗадачиАптечнымПунктам.Form.ФормаЗадач</Form>
+			<Form>CommonForm.НачальнаяФормаДиректора</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">false</xr:Value>
+				<xr:Value name="Role.РаботникАптеки">false</xr:Value>
+				<xr:Value name="Role.РаботникДоставки">false</xr:Value>
+				<xr:Value name="Role.БухгалтерГлавныйЭкономист">false</xr:Value>
+				<xr:Value name="Role.Директор">true</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>CommonForm.НачальнаяФормаРаботникаАптеки</Form>
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
 				<xr:Value name="Role.Администратор">false</xr:Value>
 				<xr:Value name="Role.РаботникАптеки">true</xr:Value>
 				<xr:Value name="Role.РаботникДоставки">false</xr:Value>
-				<xr:Value name="Role.БухгалтерГлавныйЭкономист">true</xr:Value>
-				<xr:Value name="Role.Директор">true</xr:Value>
+				<xr:Value name="Role.БухгалтерГлавныйЭкономист">false</xr:Value>
 			</Visibility>
 		</Item>
 		<Item>
-			<Form>Task.ЗадачиПоставкиВАптечныеПункты.Form.МоиЗадачи</Form>
+			<Form>CommonForm.НачальнаяФормаБухгалтера</Form>
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
 				<xr:Value name="Role.Администратор">false</xr:Value>
-				<xr:Value name="Role.РаботникАптеки">true</xr:Value>
-				<xr:Value name="Role.РаботникДоставки">true</xr:Value>
+				<xr:Value name="Role.РаботникАптеки">false</xr:Value>
+				<xr:Value name="Role.РаботникДоставки">false</xr:Value>
 				<xr:Value name="Role.БухгалтерГлавныйЭкономист">true</xr:Value>
-				<xr:Value name="Role.Директор">true</xr:Value>
+				<xr:Value name="Role.Директор">false</xr:Value>
 			</Visibility>
 		</Item>
 		<Item>
-			<Form>Task.ЗадачиПоставкиНаСклад.Form.МоиЗадачи</Form>
+			<Form>CommonForm.НачальнаяФормаРаботникаДоставки</Form>
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
 				<xr:Value name="Role.Администратор">false</xr:Value>
 				<xr:Value name="Role.РаботникАптеки">false</xr:Value>
 				<xr:Value name="Role.РаботникДоставки">true</xr:Value>
-				<xr:Value name="Role.БухгалтерГлавныйЭкономист">true</xr:Value>
-				<xr:Value name="Role.Директор">true</xr:Value>
+				<xr:Value name="Role.БухгалтерГлавныйЭкономист">false</xr:Value>
+				<xr:Value name="Role.Директор">false</xr:Value>
 			</Visibility>
 		</Item>
 	</Column>

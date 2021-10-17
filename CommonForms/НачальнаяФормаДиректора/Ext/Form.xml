@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="Дата" id="23">
+			<DataPath>Дата</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+			</Border>
+			<TextColor>#E60000</TextColor>
+			<Font ref="style:NormalTextFont" height="18" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="25"/>
+		</LabelField>
+		<UsualGroup name="ЗадачиИБизнесПроцессы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи и бизнес процессы</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи и бизнес процессы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ЗадачиИБизнесПроцессыРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Button name="ОткрытьЗадачиАптечнымПунктам" id="1">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<CommandName>Form.Command.ОткрытьЗадачиАптечнымПунктам</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ОткрытьЗадачиАптечнымПунктамРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<Button name="БППоставокНаСклад" id="13">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<CommandName>Form.Command.БППоставокНаСклад</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БП поставок на склад</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="БППоставокНаСкладРасширеннаяПодсказка" id="14"/>
+				</Button>
+				<Button name="БППоставокВАптечныйПункт" id="15">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<CommandName>Form.Command.БППоставокВАптечныйПункт</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="БППоставокВАптечныйПунктРасширеннаяПодсказка" id="16"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Отчеты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ОтчетыРасширеннаяПодсказка" id="6"/>
+			<ChildItems>
+				<Button name="ОстаткиТоваровНаСкладе" id="7">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<CommandName>Form.Command.ОстаткиТоваровНаСкладе</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ОстаткиТоваровНаСкладеРасширеннаяПодсказка" id="8"/>
+				</Button>
+				<Button name="ПрибыльОтРеализацииТоваров" id="19">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<CommandName>Form.Command.ПрибыльОтРеализацииТоваров</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ПрибыльОтРеализацииТоваровРасширеннаяПодсказка" id="20"/>
+				</Button>
+				<Button name="ПрибыльАптечныхПунктов" id="21">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<CommandName>Form.Command.ПрибыльАптечныхПунктов</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ПрибыльАптечныхПунктовРасширеннаяПодсказка" id="22"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Прочие" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ПрочиеРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<Button name="ПросмотрИнформацииОбОрганизации" id="9">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<CommandName>Form.Command.ПросмотрИнформацииОбОрганизации</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ПросмотрИнформацииОбОрганизацииРасширеннаяПодсказка" id="10"/>
+				</Button>
+				<Button name="КоэффициентыЦен" id="17">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<CommandName>Form.Command.КоэффициентыЦен</CommandName>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="КоэффициентыЦенРасширеннаяПодсказка" id="18"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Дата" id="1">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьЗадачиАптечнымПунктам" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть задачи аптечным пунктам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть задачи аптечным пунктам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьЗадачиАптечнымПунктам</Action>
+		</Command>
+		<Command name="ОстаткиТоваровНаСкладе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки товаров на складе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки товаров на складе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстаткиТоваровНаСкладе</Action>
+		</Command>
+		<Command name="ПросмотрИнформацииОбОрганизации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр информации об организации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр информации об организации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПросмотрИнформацииОбОрганизации</Action>
+		</Command>
+		<Command name="БППоставокНаСклад" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БППоставок на склад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БППоставок на склад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БППоставокНаСклад</Action>
+		</Command>
+		<Command name="БППоставокВАптечныйПункт" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БП поставок в аптечный пункт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БППоставок в аптечный пункт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БППоставокВАптечныйПункт</Action>
+		</Command>
+		<Command name="КоэффициентыЦен" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициенты цен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициенты цен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоэффициентыЦен</Action>
+		</Command>
+		<Command name="ПрибыльОтРеализацииТоваров" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прибыль от реализации товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прибыль от реализации товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрибыльОтРеализацииТоваров</Action>
+		</Command>
+		<Command name="ПрибыльАптечныхПунктов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прибыль аптечных пунктов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прибыль аптечных пунктов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрибыльАптечныхПунктов</Action>
+		</Command>
+	</Commands>
+</Form>
