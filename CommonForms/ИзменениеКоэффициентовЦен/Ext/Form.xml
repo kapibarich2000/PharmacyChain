@@ -3,29 +3,10 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
-		<InputField name="КоэффициентИзмененияЦеныОтделения1" id="1">
-			<DataPath>НаборКонстант.КоэффициентИзмененияЦеныОтделения1</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>КоэффициентИзмененияЦеныОтделения 1</v8:content>
-				</v8:item>
-			</Title>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="КоэффициентИзмененияЦеныОтделения1КонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="КоэффициентИзмененияЦеныОтделения1РасширеннаяПодсказка" id="3"/>
-		</InputField>
-		<InputField name="КоэффициентИзмененияЦеныОтделения2" id="4">
-			<DataPath>НаборКонстант.КоэффициентИзмененияЦеныОтделения2</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>КоэффициентИзмененияЦеныОтделения 2</v8:content>
-				</v8:item>
-			</Title>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="КоэффициентИзмененияЦеныОтделения2КонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="КоэффициентИзмененияЦеныОтделения2РасширеннаяПодсказка" id="6"/>
+		<InputField name="КоэффициентИзмененияЦеныОтделения" id="1">
+			<DataPath>НаборКонстант.КоэффициентИзмененияЦеныОтделения</DataPath>
+			<ContextMenu name="КоэффициентИзмененияЦеныОтделенияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КоэффициентИзмененияЦеныОтделенияРасширеннаяПодсказка" id="3"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

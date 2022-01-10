@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<Constant uuid="f7e5c296-a95f-4cf8-ba98-6f727302325f">
+	<Constant uuid="39fac2c0-6217-4b26-a4f2-124d7a999e60">
 		<InternalInfo>
-			<xr:GeneratedType name="ConstantManager.КоэффициентИзмененияЦеныОтделения1" category="Manager">
-				<xr:TypeId>b7163773-cb5f-4fd9-8b65-8605a3f663ce</xr:TypeId>
-				<xr:ValueId>ba9117c0-61cb-40cb-afa6-ed8731a557c1</xr:ValueId>
+			<xr:GeneratedType name="ConstantManager.КоэффициентИзмененияЦеныОтделения" category="Manager">
+				<xr:TypeId>9c717435-ad56-4435-b870-ad6828da21f2</xr:TypeId>
+				<xr:ValueId>5f756623-dbe1-4d03-aac9-9af73f1e0f1b</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ConstantValueManager.КоэффициентИзмененияЦеныОтделения1" category="ValueManager">
-				<xr:TypeId>7b1e227b-c0e2-4b92-bedf-8ed60244a28e</xr:TypeId>
-				<xr:ValueId>92eeac5d-4a30-4f45-accc-f5c55ce99e3f</xr:ValueId>
+			<xr:GeneratedType name="ConstantValueManager.КоэффициентИзмененияЦеныОтделения" category="ValueManager">
+				<xr:TypeId>9ff96064-e6ec-49bc-b04d-0c2247f40cd8</xr:TypeId>
+				<xr:ValueId>460925ea-80a0-4eaf-98d0-b9ce887d53fd</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ConstantValueKey.КоэффициентИзмененияЦеныОтделения1" category="ValueKey">
-				<xr:TypeId>c74b288e-aba7-45a8-881e-8c67256568fa</xr:TypeId>
-				<xr:ValueId>5ab33257-d6be-4b00-8d65-c3296b67aec6</xr:ValueId>
+			<xr:GeneratedType name="ConstantValueKey.КоэффициентИзмененияЦеныОтделения" category="ValueKey">
+				<xr:TypeId>e85c48f9-8fa4-4ce7-883e-d117d4d19b91</xr:TypeId>
+				<xr:ValueId>5296d7a4-92c3-4f42-adad-1f33745caa13</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>КоэффициентИзмененияЦеныОтделения1</Name>
+			<Name>КоэффициентИзмененияЦеныОтделения</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Коэффициент изменения цены отделения1</v8:content>
+					<v8:content>Коэффициент изменения цены отделения</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

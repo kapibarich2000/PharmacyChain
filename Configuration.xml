@@ -235,8 +235,7 @@
 			<Role>Директор</Role>
 			<CommonModule>ФункцииДляРаботыСДокументами</CommonModule>
 			<CommonModule>СерверныеФункции</CommonModule>
-			<Constant>КоэффициентИзмененияЦеныОтделения1</Constant>
-			<Constant>КоэффициентИзмененияЦеныОтделения2</Constant>
+			<Constant>КоэффициентИзмененияЦеныОтделения</Constant>
 			<Constant>ЮридическийАдресОрганизации</Constant>
 			<Constant>НазваниеОрганизации</Constant>
 			<Constant>ГенеральныйДиректор</Constant>
