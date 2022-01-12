@@ -3,6 +3,12 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
+		<Button name="Магия" id="28">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Магия</CommandName>
+			<BackColor>#B1FF0B</BackColor>
+			<ExtendedTooltip name="МагияРасширеннаяПодсказка" id="29"/>
+		</Button>
 		<InputField name="НазваниеОрганизации" id="25">
 			<DataPath>НаборКонстант.НазваниеОрганизации</DataPath>
 			<ContextMenu name="НазваниеОрганизацииКонтекстноеМеню" id="26"/>
@@ -67,4 +73,21 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Магия" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Магия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Магия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Магия</Action>
+		</Command>
+	</Commands>
 </Form>

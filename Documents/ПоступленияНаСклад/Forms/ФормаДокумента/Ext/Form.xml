@@ -36,6 +36,9 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="35">
 			<Representation>None</Representation>

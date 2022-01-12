@@ -111,7 +111,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="1080" left="1020" bottom="1140" right="1140"/>
+				<Location top="1160" left="1020" bottom="1220" right="1140"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -181,9 +181,8 @@
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
 					<Point x="480" y="350"/>
-					<Point x="440" y="350"/>
-					<Point x="440" y="350"/>
-					<Point x="400" y="350"/>
+					<Point x="350" y="350"/>
+					<Point x="350" y="400"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -191,8 +190,8 @@
 						<PortIndex>1</PortIndex>
 					</From>
 					<To>
-						<Item>ПоставкаТовараНаСклад</Item>
-						<PortIndex>3</PortIndex>
+						<Item>ОрганизацияПоставкиНедостающихТоваровНаСклад</Item>
+						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
 				<Line width="1" gap="false">
@@ -229,17 +228,23 @@
 				<PivotPoints>
 					<Point x="620" y="350"/>
 					<Point x="640" y="350"/>
-					<Point x="640" y="400"/>
-					<Point x="490" y="400"/>
-					<Point x="490" y="420"/>
+					<Point x="640" y="480"/>
+					<Point x="490" y="480"/>
+					<Point x="490" y="520"/>
 				</PivotPoints>
+				<ManualyMovedSegments>
+					<Segment index="2">
+						<Start x="640" y="480"/>
+						<End x="490" y="480"/>
+					</Segment>
+				</ManualyMovedSegments>
 				<Connect>
 					<From>
 						<Item>ТоварИмеется</Item>
 						<PortIndex>3</PortIndex>
 					</From>
 					<To>
-						<Item>РаспределитьПоставку</Item>
+						<Item>РаспечататьЗаявкуНаДоставку</Item>
 						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
@@ -274,7 +279,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="500" left="420" bottom="560" right="560"/>
+				<Location top="520" left="420" bottom="580" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -320,10 +325,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="560"/>
-					<Point x="490" y="570"/>
-					<Point x="490" y="570"/>
 					<Point x="490" y="580"/>
+					<Point x="490" y="600"/>
+					<Point x="490" y="600"/>
+					<Point x="490" y="620"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -366,7 +371,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="580" left="420" bottom="640" right="560"/>
+				<Location top="620" left="420" bottom="680" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -412,10 +417,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="640"/>
-					<Point x="490" y="650"/>
-					<Point x="490" y="650"/>
-					<Point x="490" y="660"/>
+					<Point x="490" y="680"/>
+					<Point x="490" y="700"/>
+					<Point x="490" y="700"/>
+					<Point x="490" y="720"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -458,7 +463,7 @@
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="660" left="420" bottom="720" right="560"/>
+				<Location top="720" left="420" bottom="780" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -504,10 +509,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="720"/>
-					<Point x="490" y="730"/>
-					<Point x="490" y="730"/>
-					<Point x="490" y="740"/>
+					<Point x="490" y="780"/>
+					<Point x="490" y="790"/>
+					<Point x="490" y="790"/>
+					<Point x="490" y="800"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -516,190 +521,6 @@
 					</From>
 					<To>
 						<Item>УказатьСостояниеПоставки</Item>
-						<PortIndex>2</PortIndex>
-					</To>
-				</Connect>
-				<Line width="1" gap="false">
-					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
-				</Line>
-				<DecorativeLine>false</DecorativeLine>
-				<TextLocation>FirstSegment</TextLocation>
-				<BeginArrow>None</BeginArrow>
-				<EndArrow>Filled</EndArrow>
-			</Properties>
-		</ConnectionLine>
-		<Activity id="30" uuid="78d080ac-7a3b-45ef-8603-b1a9913eb231">
-			<Properties>
-				<Name>РаспределитьПоставку</Name>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Распределить поставку</v8:content>
-					</v8:item>
-				</Title>
-				<ToolTip/>
-				<TabOrder>21</TabOrder>
-				<BackColor>auto</BackColor>
-				<TextColor>style:FormTextColor</TextColor>
-				<LineColor>style:BorderColor</LineColor>
-				<GroupNumber>0</GroupNumber>
-				<ZOrder>12</ZOrder>
-				<Hyperlink>false</Hyperlink>
-				<Transparent>false</Transparent>
-				<Font kind="AutoFont"/>
-				<HorizontalAlign>Center</HorizontalAlign>
-				<VerticalAlign>Center</VerticalAlign>
-				<PictureLocation>Left</PictureLocation>
-				<Location top="420" left="420" bottom="480" right="560"/>
-				<Border width="1" gap="false">
-					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
-				</Border>
-				<Picture/>
-				<PictureSize>AutoSize</PictureSize>
-				<TaskDescription>Распределить поставку</TaskDescription>
-				<Explanation/>
-				<Group>false</Group>
-				<AddressingAttributes>
-					<AddressingAttribute ref="Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Исполнитель">
-						<Value xsi:nil="true"/>
-					</AddressingAttribute>
-					<AddressingAttribute ref="Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Должность">
-						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.Должности.Бухгалтер</Value>
-					</AddressingAttribute>
-				</AddressingAttributes>
-			</Properties>
-			<Events>
-				<Event name="InteractiveActivationProcessing"/>
-				<Event name="BeforeCreateTasks"/>
-				<Event name="OnCreateTask"/>
-				<Event name="OnExecute"/>
-				<Event name="CheckExecutionProcessing"/>
-				<Event name="BeforeExecute">РаспределитьПоставкуПередВыполнением</Event>
-				<Event name="BeforeExecuteInteractively"/>
-			</Events>
-		</Activity>
-		<ConnectionLine id="31">
-			<Properties>
-				<Name>Линия3</Name>
-				<Title/>
-				<ToolTip/>
-				<TabOrder>22</TabOrder>
-				<BackColor>auto</BackColor>
-				<TextColor>style:FormTextColor</TextColor>
-				<LineColor>style:BorderColor</LineColor>
-				<GroupNumber>0</GroupNumber>
-				<ZOrder>13</ZOrder>
-				<Hyperlink>false</Hyperlink>
-				<Transparent>false</Transparent>
-				<Font kind="AutoFont"/>
-				<HorizontalAlign>Center</HorizontalAlign>
-				<VerticalAlign>Center</VerticalAlign>
-				<PictureLocation>Left</PictureLocation>
-				<PivotPoints>
-					<Point x="490" y="480"/>
-					<Point x="490" y="490"/>
-					<Point x="490" y="490"/>
-					<Point x="490" y="500"/>
-				</PivotPoints>
-				<Connect>
-					<From>
-						<Item>РаспределитьПоставку</Item>
-						<PortIndex>4</PortIndex>
-					</From>
-					<To>
-						<Item>РаспечататьЗаявкуНаДоставку</Item>
-						<PortIndex>2</PortIndex>
-					</To>
-				</Connect>
-				<Line width="1" gap="false">
-					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
-				</Line>
-				<DecorativeLine>false</DecorativeLine>
-				<TextLocation>FirstSegment</TextLocation>
-				<BeginArrow>None</BeginArrow>
-				<EndArrow>Filled</EndArrow>
-			</Properties>
-		</ConnectionLine>
-		<Activity id="36" uuid="202da204-2d91-40f4-94f9-51d9581f5050">
-			<Properties>
-				<Name>ПроверитьНаличиеТовара</Name>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Проверить наличие товара</v8:content>
-					</v8:item>
-				</Title>
-				<ToolTip/>
-				<TabOrder>25</TabOrder>
-				<BackColor>auto</BackColor>
-				<TextColor>style:FormTextColor</TextColor>
-				<LineColor>style:BorderColor</LineColor>
-				<GroupNumber>0</GroupNumber>
-				<ZOrder>14</ZOrder>
-				<Hyperlink>false</Hyperlink>
-				<Transparent>false</Transparent>
-				<Font kind="AutoFont"/>
-				<HorizontalAlign>Center</HorizontalAlign>
-				<VerticalAlign>Center</VerticalAlign>
-				<PictureLocation>Left</PictureLocation>
-				<Location top="220" left="480" bottom="280" right="620"/>
-				<Border width="1" gap="false">
-					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
-				</Border>
-				<Picture/>
-				<PictureSize>AutoSize</PictureSize>
-				<TaskDescription>Проверить наличие товара</TaskDescription>
-				<Explanation/>
-				<Group>false</Group>
-				<AddressingAttributes>
-					<AddressingAttribute ref="Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Исполнитель">
-						<Value xsi:nil="true"/>
-					</AddressingAttribute>
-					<AddressingAttribute ref="Task.ЗадачиПоставкиВАптечныеПункты.AddressingAttribute.Должность">
-						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.Должности.Бухгалтер</Value>
-					</AddressingAttribute>
-				</AddressingAttributes>
-			</Properties>
-			<Events>
-				<Event name="InteractiveActivationProcessing"/>
-				<Event name="BeforeCreateTasks"/>
-				<Event name="OnCreateTask"/>
-				<Event name="OnExecute"/>
-				<Event name="CheckExecutionProcessing"/>
-				<Event name="BeforeExecute">ПроверитьНаличиеТовараПередВыполнением</Event>
-				<Event name="BeforeExecuteInteractively"/>
-			</Events>
-		</Activity>
-		<ConnectionLine id="37">
-			<Properties>
-				<Name>Линия11</Name>
-				<Title/>
-				<ToolTip/>
-				<TabOrder>26</TabOrder>
-				<BackColor>auto</BackColor>
-				<TextColor>style:FormTextColor</TextColor>
-				<LineColor>style:BorderColor</LineColor>
-				<GroupNumber>0</GroupNumber>
-				<ZOrder>15</ZOrder>
-				<Hyperlink>false</Hyperlink>
-				<Transparent>false</Transparent>
-				<Font kind="AutoFont"/>
-				<HorizontalAlign>Center</HorizontalAlign>
-				<VerticalAlign>Center</VerticalAlign>
-				<PictureLocation>Left</PictureLocation>
-				<PivotPoints>
-					<Point x="550" y="280"/>
-					<Point x="550" y="300"/>
-					<Point x="550" y="300"/>
-					<Point x="550" y="320"/>
-				</PivotPoints>
-				<Connect>
-					<From>
-						<Item>ПроверитьНаличиеТовара</Item>
-						<PortIndex>4</PortIndex>
-					</From>
-					<To>
-						<Item>ТоварИмеется</Item>
 						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
@@ -727,14 +548,14 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>16</ZOrder>
+				<ZOrder>12</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="820" left="420" bottom="960" right="560"/>
+				<Location top="880" left="420" bottom="1020" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -785,7 +606,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>17</ZOrder>
+				<ZOrder>13</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -793,10 +614,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="559" y="914"/>
-					<Point x="709" y="914"/>
-					<Point x="709" y="930"/>
-					<Point x="860" y="930"/>
+					<Point x="559" y="974"/>
+					<Point x="709" y="974"/>
+					<Point x="709" y="1010"/>
+					<Point x="860" y="1010"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -827,7 +648,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>18</ZOrder>
+				<ZOrder>14</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -835,11 +656,11 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="420" y="932"/>
-					<Point x="400" y="932"/>
-					<Point x="400" y="980"/>
-					<Point x="660" y="980"/>
-					<Point x="660" y="1000"/>
+					<Point x="420" y="992"/>
+					<Point x="400" y="992"/>
+					<Point x="400" y="1050"/>
+					<Point x="660" y="1050"/>
+					<Point x="660" y="1080"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -870,7 +691,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>19</ZOrder>
+				<ZOrder>15</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -878,9 +699,9 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="559" y="950"/>
-					<Point x="660" y="950"/>
-					<Point x="660" y="1000"/>
+					<Point x="559" y="1010"/>
+					<Point x="660" y="1010"/>
+					<Point x="660" y="1080"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -916,14 +737,14 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>20</ZOrder>
+				<ZOrder>16</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="740" left="420" bottom="800" right="560"/>
+				<Location top="800" left="420" bottom="860" right="560"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -961,7 +782,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>21</ZOrder>
+				<ZOrder>17</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -969,10 +790,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="490" y="800"/>
-					<Point x="490" y="810"/>
-					<Point x="490" y="810"/>
-					<Point x="490" y="820"/>
+					<Point x="490" y="860"/>
+					<Point x="490" y="870"/>
+					<Point x="490" y="870"/>
+					<Point x="490" y="880"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -1008,14 +829,14 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>22</ZOrder>
+				<ZOrder>18</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="900" left="860" bottom="960" right="1060"/>
+				<Location top="980" left="860" bottom="1040" right="1060"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -1036,7 +857,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>23</ZOrder>
+				<ZOrder>19</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -1044,9 +865,9 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="1060" y="930"/>
-					<Point x="1080" y="930"/>
-					<Point x="1080" y="1080"/>
+					<Point x="1060" y="1010"/>
+					<Point x="1080" y="1010"/>
+					<Point x="1080" y="1160"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -1082,14 +903,14 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>24</ZOrder>
+				<ZOrder>20</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="1000" left="580" bottom="1080" right="740"/>
+				<Location top="1080" left="580" bottom="1160" right="740"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -1127,7 +948,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>25</ZOrder>
+				<ZOrder>21</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -1135,10 +956,10 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="660" y="1080"/>
-					<Point x="660" y="1100"/>
-					<Point x="960" y="1100"/>
-					<Point x="960" y="960"/>
+					<Point x="660" y="1160"/>
+					<Point x="660" y="1180"/>
+					<Point x="960" y="1180"/>
+					<Point x="960" y="1040"/>
 				</PivotPoints>
 				<Connect>
 					<From>
@@ -1174,7 +995,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>26</ZOrder>
+				<ZOrder>22</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -1219,7 +1040,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>27</ZOrder>
+				<ZOrder>23</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -1238,7 +1059,7 @@
 						<PortIndex>4</PortIndex>
 					</From>
 					<To>
-						<Item>ПроверитьНаличиеТовара</Item>
+						<Item>ПроверкаНаличияТовара</Item>
 						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
@@ -1253,11 +1074,11 @@
 		</ConnectionLine>
 		<Processing id="65" uuid="cf5eb892-ad5a-4340-9a90-3a44b7ef8dd1">
 			<Properties>
-				<Name>ПоставкаТовараНаСклад</Name>
+				<Name>ОрганизацияПоставкиНедостающихТоваровНаСклад</Name>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Поставка товара на склад</v8:content>
+						<v8:content>Организация поставки недостающих товаров на склад</v8:content>
 					</v8:item>
 				</Title>
 				<ToolTip/>
@@ -1266,14 +1087,14 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>28</ZOrder>
+				<ZOrder>24</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
 				<HorizontalAlign>Center</HorizontalAlign>
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
-				<Location top="320" left="280" bottom="380" right="400"/>
+				<Location top="400" left="260" bottom="460" right="440"/>
 				<Border width="1" gap="false">
 					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
 				</Border>
@@ -1294,7 +1115,7 @@
 				<TextColor>style:FormTextColor</TextColor>
 				<LineColor>style:BorderColor</LineColor>
 				<GroupNumber>0</GroupNumber>
-				<ZOrder>29</ZOrder>
+				<ZOrder>25</ZOrder>
 				<Hyperlink>false</Hyperlink>
 				<Transparent>false</Transparent>
 				<Font kind="AutoFont"/>
@@ -1302,18 +1123,100 @@
 				<VerticalAlign>Center</VerticalAlign>
 				<PictureLocation>Left</PictureLocation>
 				<PivotPoints>
-					<Point x="340" y="380"/>
-					<Point x="340" y="450"/>
-					<Point x="420" y="450"/>
+					<Point x="350" y="460"/>
+					<Point x="350" y="480"/>
+					<Point x="490" y="480"/>
+					<Point x="490" y="520"/>
 				</PivotPoints>
+				<ManualyMovedSegments>
+					<Segment index="1">
+						<Start x="350" y="480"/>
+						<End x="490" y="480"/>
+					</Segment>
+				</ManualyMovedSegments>
 				<Connect>
 					<From>
-						<Item>ПоставкаТовараНаСклад</Item>
+						<Item>ОрганизацияПоставкиНедостающихТоваровНаСклад</Item>
 						<PortIndex>4</PortIndex>
 					</From>
 					<To>
-						<Item>РаспределитьПоставку</Item>
-						<PortIndex>1</PortIndex>
+						<Item>РаспечататьЗаявкуНаДоставку</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Processing id="69" uuid="0774b0ff-6586-43e6-bc4c-a37aebc34945">
+			<Properties>
+				<Name>ПроверкаНаличияТовара</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проверка наличия товара</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>51</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>26</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="220" left="480" bottom="280" right="620"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+			</Properties>
+			<Events>
+				<Event name="Processing">ПроверкаНаличияТовараОбработка</Event>
+			</Events>
+		</Processing>
+		<ConnectionLine id="70">
+			<Properties>
+				<Name>Линия6</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>52</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>27</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="550" y="280"/>
+					<Point x="550" y="300"/>
+					<Point x="550" y="300"/>
+					<Point x="550" y="320"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ПроверкаНаличияТовара</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>ТоварИмеется</Item>
+						<PortIndex>2</PortIndex>
 					</To>
 				</Connect>
 				<Line width="1" gap="false">

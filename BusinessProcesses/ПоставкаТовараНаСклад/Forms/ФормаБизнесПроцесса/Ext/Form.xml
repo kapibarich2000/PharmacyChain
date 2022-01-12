@@ -87,6 +87,7 @@
 			<ChildItems>
 				<InputField name="Склад" id="53">
 					<DataPath>Объект.Склад</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СкладКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="55"/>
 				</InputField>

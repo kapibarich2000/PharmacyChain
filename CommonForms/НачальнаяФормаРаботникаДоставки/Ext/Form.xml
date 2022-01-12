@@ -2,17 +2,14 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
-		<LabelField name="Дата" id="17">
+		<LabelField name="Дата" id="28">
 			<DataPath>Дата</DataPath>
 			<TitleLocation>None</TitleLocation>
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-			<Border width="1">
-				<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
-			</Border>
-			<TextColor>#E60000</TextColor>
-			<Font ref="style:NormalTextFont" height="18" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-			<ContextMenu name="ДатаКонтекстноеМеню" id="18"/>
-			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="19"/>
+			<TextColor>#C00000</TextColor>
+			<Font ref="style:NormalTextFont" height="18" bold="true" italic="false" underline="true" strikeout="false" kind="StyleItem"/>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="30"/>
 		</LabelField>
 		<UsualGroup name="ДокументыИСправочники" id="1">
 			<Title>
@@ -87,6 +84,14 @@
 					<v8:DateFractions>Date</v8:DateFractions>
 				</v8:DateQualifiers>
 			</Type>
+			<View>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="Role.РаботникАптеки">true</xr:Value>
+				<xr:Value name="Role.РаботникДоставки">true</xr:Value>
+				<xr:Value name="Role.БухгалтерГлавныйЭкономист">true</xr:Value>
+				<xr:Value name="Role.Директор">false</xr:Value>
+			</View>
 		</Attribute>
 	</Attributes>
 	<Commands>

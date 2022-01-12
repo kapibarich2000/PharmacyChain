@@ -9,11 +9,8 @@
 			<DataPath>Дата</DataPath>
 			<TitleLocation>None</TitleLocation>
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-			<Border width="1">
-				<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
-			</Border>
 			<TextColor>#E60000</TextColor>
-			<Font ref="style:NormalTextFont" height="18" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Font ref="style:NormalTextFont" height="18" bold="true" italic="false" underline="true" strikeout="false" kind="StyleItem"/>
 			<ContextMenu name="ДатаКонтекстноеМеню" id="24"/>
 			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="25"/>
 		</LabelField>

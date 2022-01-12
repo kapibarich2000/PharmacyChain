@@ -75,17 +75,17 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<LabelDecoration name="ЗадачиНадпись" id="33">
+		<LabelDecoration name="ОтчетыНадпись" id="36">
 			<TextColor>style:AccentColor</TextColor>
 			<Font ref="style:NormalTextFont" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Задачи</v8:content>
+					<v8:content>Отчеты</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ЗадачиНадписьКонтекстноеМеню" id="34"/>
-			<ExtendedTooltip name="ЗадачиНадписьРасширеннаяПодсказка" id="35"/>
+			<ContextMenu name="ОтчетыНадписьКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ОтчетыНадписьРасширеннаяПодсказка" id="38"/>
 		</LabelDecoration>
 		<UsualGroup name="Отчеты" id="41">
 			<Title>
@@ -121,17 +121,17 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<LabelDecoration name="ОтчетыНадпись" id="36">
+		<LabelDecoration name="ЗадачиНадпись" id="33">
 			<TextColor>style:AccentColor</TextColor>
 			<Font ref="style:NormalTextFont" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отчеты надпись</v8:content>
+					<v8:content>Задачи</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ОтчетыНадписьКонтекстноеМеню" id="37"/>
-			<ExtendedTooltip name="ОтчетыНадписьРасширеннаяПодсказка" id="38"/>
+			<ContextMenu name="ЗадачиНадписьКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ЗадачиНадписьРасширеннаяПодсказка" id="35"/>
 		</LabelDecoration>
 		<UsualGroup name="Задачи" id="39">
 			<Title>
