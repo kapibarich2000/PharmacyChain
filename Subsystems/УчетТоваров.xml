@@ -34,6 +34,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачиПоставкиНаСклад</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.ПоставкаТовараНаСклад</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказыКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Поставщики</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

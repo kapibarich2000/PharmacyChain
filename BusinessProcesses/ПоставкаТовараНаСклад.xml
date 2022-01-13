@@ -117,16 +117,16 @@
 			</Attribute>
 			<Attribute uuid="d280518f-bbea-4cab-b796-13a74c5dd1a2">
 				<Properties>
-					<Name>ТоварДоставлен</Name>
+					<Name>СостояниеПоставки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Товар доставлен</v8:content>
+							<v8:content>Состояние поставки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.НаличиеТовараНаСкладе</v8:Type>
+						<v8:Type>cfg:EnumRef.СостояниеПоставки</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -299,6 +299,30 @@
 			</TabularSection>
 			<Form>ФормаБизнесПроцесса</Form>
 			<Form>ФормаСписка</Form>
+			<Template>МакетПечатиСпискаНоменклатуры</Template>
+			<Command uuid="824506c8-d141-4667-a43c-dc18604d3eab">
+				<Properties>
+					<Name>СписокНоменклатуры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необходимые товары</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:BusinessProcessRef.ПоставкаТовараНаСклад</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</BusinessProcess>
 </MetaDataObject>

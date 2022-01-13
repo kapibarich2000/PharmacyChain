@@ -87,12 +87,11 @@
 			<ChildItems>
 				<InputField name="Склад" id="53">
 					<DataPath>Объект.Склад</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="СкладКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="55"/>
 				</InputField>
 				<LabelField name="ТоварДоставлен" id="13">
-					<DataPath>Объект.ТоварДоставлен</DataPath>
+					<DataPath>Объект.СостояниеПоставки</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<Border width="1">
 						<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
@@ -102,6 +101,13 @@
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
+		<Button name="ПечатьСпискаНоменклатуры" id="58">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПечатьСпискаНоменклатуры</CommandName>
+			<BackColor>#B6FF6B</BackColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ПечатьСпискаНоменклатурыРасширеннаяПодсказка" id="59"/>
+		</Button>
 		<Table name="Товары" id="16">
 			<Representation>List</Representation>
 			<TitleLocation>Auto</TitleLocation>
@@ -199,4 +205,21 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПечатьСпискаНоменклатуры" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать списка номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать списка номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьСпискаНоменклатуры</Action>
+		</Command>
+	</Commands>
 </Form>

@@ -26,6 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ИнформацияОбОрганизации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ИзменениеКоэффициентовЦен</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрибыльОтРеализацииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Поставщики</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

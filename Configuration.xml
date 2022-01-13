@@ -258,6 +258,7 @@
 			<Catalog>ТипыОтделений</Catalog>
 			<Catalog>Товары</Catalog>
 			<Catalog>СписокСкладов</Catalog>
+			<Catalog>Поставщики</Catalog>
 			<Document>ПоступленияНаСклад</Document>
 			<Document>СписокПродаж</Document>
 			<Document>ПоставкаВПункты</Document>

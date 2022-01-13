@@ -100,11 +100,23 @@
 			</EnumValue>
 			<EnumValue uuid="bf1d6ab2-4c70-43f3-b4bf-55fea3b1db9b">
 				<Properties>
-					<Name>ОжидаетсяПриходТовараНаСклад</Name>
+					<Name>Выполнена</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ожидается приход товара на склад</v8:content>
+							<v8:content>Выполнена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0f0714fd-b8ad-4237-b58d-f3be3ae8fcb8">
+				<Properties>
+					<Name>ВОбработке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В обработке</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
